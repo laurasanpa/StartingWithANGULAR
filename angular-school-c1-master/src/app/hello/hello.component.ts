@@ -4,7 +4,8 @@ import { Component } from '@angular/core'
     //Nombre por el que llamar al componente
     selector: "custom-hello",
     //Contenido
-    template: `<p> Hello World <p>`,
+    //template: `<p> Hello World <p>`,
+    templateUrl: './hello.component.html',
 })
 export class HelloComponent{
 
