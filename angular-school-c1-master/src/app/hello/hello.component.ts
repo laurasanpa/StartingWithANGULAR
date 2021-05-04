@@ -1,5 +1,5 @@
 //Para poder pasarle valores desde fuera importamos Input
-import { Component, Input} from '@angular/core'
+import { Component, Input, Output, EventEmitter} from '@angular/core'
 
 @Component({
     //Nombre por el que llamar al componente
@@ -13,14 +13,19 @@ import { Component, Input} from '@angular/core'
     //stylesUrls:['...','...'],
 })
 export class HelloComponent{
-    //Vamos a saludar por el nombre:
+    //De fuera hacia dentro:
     @Input() name:string;
+
+    @Output() sayHello:EventEmitter<string> = new EventEmitter<string>();
 
     //Constructor para inicializar:
     constructor(){
         //this.name='Laura';
     }
 
+    onNameClick(){
+        this.sayHello.emit('Hello!');
+    }
 
 }
 

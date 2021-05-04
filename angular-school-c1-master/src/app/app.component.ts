@@ -8,4 +8,8 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   public myName:string = "Alicia";
+
+  onSayHello(message){
+    console.log(message);
+  }
 }
