@@ -1,4 +1,5 @@
-import { Component } from '@angular/core'
+//Para poder pasarle valores desde fuera importamos Input
+import { Component, Input} from '@angular/core'
 
 @Component({
     //Nombre por el que llamar al componente
@@ -13,11 +14,11 @@ import { Component } from '@angular/core'
 })
 export class HelloComponent{
     //Vamos a saludar por el nombre:
-    public name:string;
+    @Input() name:string;
 
     //Constructor para inicializar:
     constructor(){
-        this.name='Laura'
+        //this.name='Laura';
     }
 
 
