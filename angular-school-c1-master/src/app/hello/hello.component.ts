@@ -6,6 +6,10 @@ import { Component } from '@angular/core'
     //Contenido
     //template: `<p> Hello World <p>`,
     templateUrl: './hello.component.html',
+    //Se ponen los estilos como en css
+    styles:[],
+    //Si quiero hacerlo con una hoja de estilos externa uso: 
+    //stylesUrls:['...','...'],
 })
 export class HelloComponent{
 
