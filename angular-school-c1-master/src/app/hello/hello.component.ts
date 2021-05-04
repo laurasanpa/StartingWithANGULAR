@@ -12,6 +12,14 @@ import { Component } from '@angular/core'
     //stylesUrls:['...','...'],
 })
 export class HelloComponent{
+    //Vamos a saludar por el nombre:
+    public name:string;
+
+    //Constructor para inicializar:
+    constructor(){
+        this.name='Laura'
+    }
+
 
 }
 
